@@ -5,7 +5,6 @@ with open('input2.txt') as f:
         test_val = int(line.split()[0])
         nums = [int(num) for num in line.split()[1:]]
         vals = [nums[0]]
-        priority_vals = []
         for i in range(1, len(nums)):
             temp = []
             while len(vals) != 0:
