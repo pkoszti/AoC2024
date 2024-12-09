@@ -42,7 +42,7 @@ while files_count > 0:
 checksum = i = 0
 for item in lst:
     for j in range(item[0]):
-        checksum += i * item[1] if len(item) == 2 else 0
+        checksum += i * item[1] if is_file(item) else 0
         i += 1
 
 print(checksum)
